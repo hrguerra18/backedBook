@@ -4,6 +4,7 @@ using Application.Feautres.Books.Commands.UpdateBookCommand;
 using Application.Feautres.Books.Queries.GetAllBook;
 using Application.Feautres.Books.Queries.GetBookById;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -32,12 +33,14 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Post(CreateBookCommand command)
         {
             return Ok(await _mediator.Send(command));
         }
 
         [HttpPut("{id}")]
+        [Authorize]
         public async Task<IActionResult> Put(int id,UpdateBookCommand command)
         {
             if (id != command.Id)
@@ -47,6 +50,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             return Ok(await _mediator.Send(new DeleteBookCommand { Id = id}));

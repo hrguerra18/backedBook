@@ -142,6 +142,102 @@
         }
       }
     },
+    "C:\\Users\\Helder Guerra\\Source\\Repos\\BookApi\\Identity\\Identity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Helder Guerra\\Source\\Repos\\BookApi\\Identity\\Identity.csproj",
+        "projectName": "Identity",
+        "projectPath": "C:\\Users\\Helder Guerra\\Source\\Repos\\BookApi\\Identity\\Identity.csproj",
+        "packagesPath": "C:\\Users\\Helder Guerra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Helder Guerra\\Source\\Repos\\BookApi\\Identity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Helder Guerra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Helder Guerra\\Source\\Repos\\BookApi\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Helder Guerra\\Source\\Repos\\BookApi\\Application\\Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.17.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Helder Guerra\\Source\\Repos\\BookApi\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -188,6 +284,14 @@
             "Ardalis.Specification.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.4, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -247,6 +351,9 @@
             "projectReferences": {
               "C:\\Users\\Helder Guerra\\Source\\Repos\\BookApi\\Application\\Application.csproj": {
                 "projectPath": "C:\\Users\\Helder Guerra\\Source\\Repos\\BookApi\\Application\\Application.csproj"
+              },
+              "C:\\Users\\Helder Guerra\\Source\\Repos\\BookApi\\Identity\\Identity.csproj": {
+                "projectPath": "C:\\Users\\Helder Guerra\\Source\\Repos\\BookApi\\Identity\\Identity.csproj"
               },
               "C:\\Users\\Helder Guerra\\Source\\Repos\\BookApi\\Persistence\\Persistence.csproj": {
                 "projectPath": "C:\\Users\\Helder Guerra\\Source\\Repos\\BookApi\\Persistence\\Persistence.csproj"

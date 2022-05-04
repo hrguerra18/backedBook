@@ -1,9 +1,12 @@
 ﻿using Application.Interfaces;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using Persistence.Contexts;
 using Persistence.Repository;
+using System.Text;
 
 namespace Persistence
 {
@@ -17,6 +20,7 @@ namespace Persistence
             #region Repositories
             services.AddTransient(typeof(IRepositoryAsync<>), typeof(MyRepositoryAsync<>));
             #endregion
+           
         }
     }
 }
